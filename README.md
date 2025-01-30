@@ -35,7 +35,7 @@ git  clone https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-Mc_King-Fas
 ```
 
 
-
+## 2. Build o Docker-compose
 Navegar até a raiz do repositório, onde se encontra o arquivo docker-compose.yml (Ex.: c:/9soat-g65-mc-king).
 
 Execute o comando no terminal: 
