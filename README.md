@@ -47,17 +47,17 @@ Execute o comando no terminal:
 
 O swagger deve abrir na porta: 8080
 ```bash
-[https://localhost:8080/index.html](http://localhost:8080/index.html)
+http://localhost:8080/index.html
 ```
 
 O banco irá executar na porta: 5432
 ```bash
-[http://localhost:5432/](http://localhost:5432/)
+http://localhost:5432/
 ```
 
 A administração do banco poderá ser feita na porta:9090
 ```bash
-[http://localhost:9090/](http://localhost:9090/)
+http://localhost:9090/
 ```
 
 Selecionar o sistema: PostgreSQL
