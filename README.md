@@ -50,7 +50,7 @@ Execute o comando no terminal:
 Criamos uma collection com todas as rotas.
 
 ```bash
-
+https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-Mc_King-Fase1/blob/main/Docs/MCKingApi_Fase1.postman_collection.json
 ```
 
 
