@@ -23,26 +23,42 @@ Docker desktop
 
 ## Executando o projeto
 
-Clonar o repositório para a pasta desejada. 
+## 1. Clonar o Repositório
+
+  
+
+Primeiro, clone o repositório do projeto para sua máquina local e, em seguida, abra um terminal na raiz do projeto.
+
+  
+```bash
+git  clone  [https://github.com/mayaramanziFiap/Tech-Challenge-Fiap-Mc-King-Fase2.git](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-Mc_King-Fase1.git)
+```
+
+
 
 Navegar até a raiz do repositório, onde se encontra o arquivo docker-compose.yml (Ex.: c:/9soat-g65-mc-king).
 
-Execute o comando no terminal: "c:\9soat-g65-mc-king> docker-compose up --build"
+Execute o comando no terminal: 
+
+```bash
+"<raiz> docker-compose up --build"
+```
 
 
 O swagger deve abrir na porta: 8080
-
+```bash
 [https://localhost:8080/index.html](http://localhost:8080/index.html)
-
+```
 
 O banco irá executar na porta: 5432
-
+```bash
 [http://localhost:5432/](http://localhost:5432/)
-
+```
 
 A administração do banco poderá ser feita na porta:9090
-
+```bash
 [http://localhost:9090/](http://localhost:9090/)
+```
 
 Selecionar o sistema: PostgreSQL
 
