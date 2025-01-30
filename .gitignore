@@ -1,0 +1,17 @@
+.vs/
+bin/
+obj/
+API/bin/
+API/obj/
+Application/bin/
+Application/obj/
+Application.Tests/bin/
+Application.Tests/obj/
+Domain/bin/
+Domain/obj/
+Domain.Tests/bin/
+Domain.Tests/obj/
+Infra/bin/
+Infra/obj/
+Infra.Tests/bin/
+Infra.Tests/obj/

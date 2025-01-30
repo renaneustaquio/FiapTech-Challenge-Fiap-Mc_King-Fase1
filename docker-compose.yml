@@ -1,0 +1,53 @@
+services:
+  api:
+    container_name: mckingapi
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: API/Dockerfile
+    networks:
+      - mcking_network
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  postgres:
+    image: postgres:16.4-bullseye
+    hostname: postgres
+    container_name: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: mc_king
+    networks:
+      - mcking_network
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - pgdata:/var/lib/postgresql/data 
+ 
+  adminer:
+    image: adminer
+    hostname: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - 9090:8080
+    networks:
+      - mcking_network 
+    depends_on:
+      - postgres 
+
+volumes:
+  pgdata:
+  
+networks:
+  mcking_network:
+    driver: bridge
