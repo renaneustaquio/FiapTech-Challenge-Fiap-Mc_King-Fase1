@@ -41,7 +41,7 @@ Navegar até a raiz do repositório, onde se encontra o arquivo docker-compose.y
 Execute o comando no terminal: 
 
 ```bash
-"<raiz> docker-compose up --build"
+ Docker-compose up --build
 ```
 
 
