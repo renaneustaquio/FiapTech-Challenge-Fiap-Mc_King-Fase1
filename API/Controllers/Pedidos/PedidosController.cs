@@ -53,7 +53,7 @@ namespace API.Controllers.Pedidos
         }
 
         [HttpPut]
-        [Route("/Cancelar/{codigo}")]
+        [Route("Cancelar/{codigo}")]
         public ActionResult<PedidoResponse> Cancelar(int codigo)
         {
 

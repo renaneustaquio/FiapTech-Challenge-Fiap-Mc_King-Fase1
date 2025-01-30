@@ -1,0 +1,1539 @@
+{
+	"info": {
+		"_postman_id": "25102bda-51bb-468b-b6fe-d113df5c163e",
+		"name": "MCKingApi_Fase1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17204431",
+		"_collection_link": "https://meu222.postman.co/workspace/Fiap~e3f277c5-de30-4223-82f2-fe7e27bb5d98/collection/17204431-25102bda-51bb-468b-b6fe-d113df5c163e?action=share&source=collection_link&creator=17204431"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Clientes",
+					"item": [
+						{
+							"name": "filtrar",
+							"item": [
+								{
+									"name": "/api/Clientes/filtrar",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/filtrar?Cpf=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												"filtrar"
+											],
+											"query": [
+												{
+													"key": "Cpf",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Clientes/filtrar?Cpf=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Clientes",
+														"filtrar"
+													],
+													"query": [
+														{
+															"key": "Cpf",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"cpf\": \"<string>\",\n  \"email\": \"<string>\",\n  \"nome\": \"<string>\",\n  \"codigo\": \"<integer>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"cpf\": \"<string>\",\n  \"email\": \"<string>\",\n  \"nome\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"cpf\": \"<string>\",\n  \"email\": \"<string>\",\n  \"nome\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"cpf\": \"<string>\",\n  \"email\": \"<string>\",\n  \"nome\": \"<string>\",\n  \"codigo\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Pedidos",
+					"item": [
+						{
+							"name": "Preparar",
+							"item": [
+								{
+									"name": "/api/Pedidos/Preparar",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Pedidos/Preparar",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Pedidos",
+												"Preparar"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/Preparar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														"Preparar"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"pedidoCombo\": [\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"dataCriacao\": \"<dateTime>\",\n        \"tempoEmPreparo\": \"<string>\"\n      },\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"dataCriacao\": \"<dateTime>\",\n        \"tempoEmPreparo\": \"<string>\"\n      }\n    ],\n    \"pedido\": \"<integer>\"\n  },\n  {\n    \"pedidoCombo\": [\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"dataCriacao\": \"<dateTime>\",\n        \"tempoEmPreparo\": \"<string>\"\n      },\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"produtoCodigo\": \"<integer>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"dataCriacao\": \"<dateTime>\",\n        \"tempoEmPreparo\": \"<string>\"\n      }\n    ],\n    \"pedido\": \"<integer>\"\n  }\n]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Monitor",
+							"item": [
+								{
+									"name": "/api/Pedidos/Monitor",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Pedidos/Monitor",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Pedidos",
+												"Monitor"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/Monitor",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														"Monitor"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"pedidoEmPreparacao\": [\n    {\n      \"pedidoCodigo\": \"<integer>\",\n      \"status\": \"Finalizado\",\n      \"dataCriacao\": \"<dateTime>\"\n    },\n    {\n      \"pedidoCodigo\": \"<integer>\",\n      \"status\": \"AguardandoPagamento\",\n      \"dataCriacao\": \"<dateTime>\"\n    }\n  ],\n  \"pedidoFinalizado\": [\n    {\n      \"pedidoCodigo\": \"<integer>\",\n      \"status\": \"Cancelado\",\n      \"dataCriacao\": \"<dateTime>\"\n    },\n    {\n      \"pedidoCodigo\": \"<integer>\",\n      \"status\": \"EmPreparo\",\n      \"dataCriacao\": \"<dateTime>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "{codigo}",
+							"item": [
+								{
+									"name": "/api/Pedidos/:codigo",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Pedidos/:codigo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Pedidos",
+												":codigo"
+											],
+											"variable": [
+												{
+													"key": "codigo",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Cancelar",
+							"item": [
+								{
+									"name": "{codigo}",
+									"item": [
+										{
+											"name": "/api/Pedidos/Cancelar/:codigo",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/Cancelar/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														"Cancelar",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Pedidos/Cancelar/:codigo",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Pedidos",
+																"Cancelar",
+																":codigo"
+															],
+															"variable": [
+																{
+																	"key": "codigo"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "FinalizarPreparo",
+							"item": [
+								{
+									"name": "{codigo}",
+									"item": [
+										{
+											"name": "/api/Pedidos/FinalizarPreparo/:codigo",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/FinalizarPreparo/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														"FinalizarPreparo",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Pedidos/FinalizarPreparo/:codigo",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Pedidos",
+																"FinalizarPreparo",
+																":codigo"
+															],
+															"variable": [
+																{
+																	"key": "codigo"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Finalizar",
+							"item": [
+								{
+									"name": "{codigo}",
+									"item": [
+										{
+											"name": "/api/Pedidos/Finalizar/:codigo",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/Finalizar/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														"Finalizar",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Pedidos/Finalizar/:codigo",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Pedidos",
+																"Finalizar",
+																":codigo"
+															],
+															"variable": [
+																{
+																	"key": "codigo"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "InserirCombo",
+							"item": [
+								{
+									"name": "{codigo}",
+									"item": [
+										{
+											"name": "/api/Pedidos/InserirCombo/:codigo",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"pedidoComboItems\": [\n    {\n      \"produtoCodigo\": \"<integer>\"\n    },\n    {\n      \"produtoCodigo\": \"<integer>\"\n    }\n  ]\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/InserirCombo/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														"InserirCombo",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"pedidoComboItems\": [\n    {\n      \"produtoCodigo\": \"<integer>\"\n    },\n    {\n      \"produtoCodigo\": \"<integer>\"\n    }\n  ]\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/Pedidos/InserirCombo/:codigo",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Pedidos",
+																"InserirCombo",
+																":codigo"
+															],
+															"variable": [
+																{
+																	"key": "codigo"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "RemoverCombo",
+							"item": [
+								{
+									"name": "{codigo}",
+									"item": [
+										{
+											"name": "{codigoCombo}",
+											"item": [
+												{
+													"name": "/api/Pedidos/RemoverCombo/:codigo/:codigoCombo",
+													"request": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Pedidos/RemoverCombo/:codigo/:codigoCombo",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Pedidos",
+																"RemoverCombo",
+																":codigo",
+																":codigoCombo"
+															],
+															"variable": [
+																{
+																	"key": "codigo",
+																	"value": "<integer>",
+																	"description": "(Required) "
+																},
+																{
+																	"key": "codigoCombo",
+																	"value": "<integer>",
+																	"description": "(Required) "
+																}
+															]
+														}
+													},
+													"response": [
+														{
+															"name": "OK",
+															"originalRequest": {
+																"method": "PUT",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "text/plain"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/api/Pedidos/RemoverCombo/:codigo/:codigoCombo",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"api",
+																		"Pedidos",
+																		"RemoverCombo",
+																		":codigo",
+																		":codigoCombo"
+																	],
+																	"variable": [
+																		{
+																			"key": "codigo"
+																		},
+																		{
+																			"key": "codigoCombo"
+																		}
+																	]
+																}
+															},
+															"status": "OK",
+															"code": 200,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "ConfirmarPagamento",
+							"item": [
+								{
+									"name": "{codigo}",
+									"item": [
+										{
+											"name": "/api/Pedidos/ConfirmarPagamento/:codigo",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"valor\": \"<double>\",\n  \"dataPagamento\": \"<dateTime>\",\n  \"metodo\": \"MercadoPago\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Pedidos/ConfirmarPagamento/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Pedidos",
+														"ConfirmarPagamento",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"valor\": \"<double>\",\n  \"dataPagamento\": \"<dateTime>\",\n  \"metodo\": \"MercadoPago\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/Pedidos/ConfirmarPagamento/:codigo",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Pedidos",
+																"ConfirmarPagamento",
+																":codigo"
+															],
+															"variable": [
+																{
+																	"key": "codigo"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Pedidos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Pedidos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Pedidos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Pedidos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Pedidos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"pedidoStatus\": {\n      \"status\": \"Cancelado\",\n      \"dataCriacao\": \"<dateTime>\"\n    },\n    \"codigo\": \"<integer>\",\n    \"cliente\": {\n      \"cpf\": \"<string>\",\n      \"email\": \"<string>\",\n      \"nome\": \"<string>\",\n      \"codigo\": \"<integer>\"\n    },\n    \"pedidoCombo\": [\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"preco\": \"<double>\"\n      },\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"preco\": \"<double>\"\n      }\n    ],\n    \"pedidoPagamento\": {\n      \"metodo\": \"MercadoPago\",\n      \"valor\": \"<double>\",\n      \"dataPagamento\": \"<dateTime>\"\n    }\n  },\n  {\n    \"pedidoStatus\": {\n      \"status\": \"Pronto\",\n      \"dataCriacao\": \"<dateTime>\"\n    },\n    \"codigo\": \"<integer>\",\n    \"cliente\": {\n      \"cpf\": \"<string>\",\n      \"email\": \"<string>\",\n      \"nome\": \"<string>\",\n      \"codigo\": \"<integer>\"\n    },\n    \"pedidoCombo\": [\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"preco\": \"<double>\"\n      },\n      {\n        \"pedidoComboItem\": [\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          },\n          {\n            \"nome\": \"<string>\",\n            \"codigo\": \"<integer>\",\n            \"preco\": \"<double>\"\n          }\n        ],\n        \"codigo\": \"<integer>\",\n        \"preco\": \"<double>\"\n      }\n    ],\n    \"pedidoPagamento\": {\n      \"metodo\": \"MercadoPago\",\n      \"valor\": \"<double>\",\n      \"dataPagamento\": \"<dateTime>\"\n    }\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Pedidos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItems\": [\n        {\n          \"produtoCodigo\": \"<integer>\"\n        },\n        {\n          \"produtoCodigo\": \"<integer>\"\n        }\n      ]\n    },\n    {\n      \"pedidoComboItems\": [\n        {\n          \"produtoCodigo\": \"<integer>\"\n        },\n        {\n          \"produtoCodigo\": \"<integer>\"\n        }\n      ]\n    }\n  ],\n  \"clienteCodigo\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Pedidos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Pedidos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItems\": [\n        {\n          \"produtoCodigo\": \"<integer>\"\n        },\n        {\n          \"produtoCodigo\": \"<integer>\"\n        }\n      ]\n    },\n    {\n      \"pedidoComboItems\": [\n        {\n          \"produtoCodigo\": \"<integer>\"\n        },\n        {\n          \"produtoCodigo\": \"<integer>\"\n        }\n      ]\n    }\n  ],\n  \"clienteCodigo\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Pedidos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Pedidos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"pedidoStatus\": {\n    \"status\": \"Finalizado\",\n    \"dataCriacao\": \"<dateTime>\"\n  },\n  \"codigo\": \"<integer>\",\n  \"cliente\": {\n    \"cpf\": \"<string>\",\n    \"email\": \"<string>\",\n    \"nome\": \"<string>\",\n    \"codigo\": \"<integer>\"\n  },\n  \"pedidoCombo\": [\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    },\n    {\n      \"pedidoComboItem\": [\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        },\n        {\n          \"nome\": \"<string>\",\n          \"codigo\": \"<integer>\",\n          \"preco\": \"<double>\"\n        }\n      ],\n      \"codigo\": \"<integer>\",\n      \"preco\": \"<double>\"\n    }\n  ],\n  \"pedidoPagamento\": {\n    \"metodo\": \"MercadoPago\",\n    \"valor\": \"<double>\",\n    \"dataPagamento\": \"<dateTime>\"\n  }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Produtos",
+					"item": [
+						{
+							"name": "{codigo}",
+							"item": [
+								{
+									"name": "/api/Produtos/:codigo",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nome\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"preco\": \"<double>\",\n  \"categoria\": \"Sobremesa\",\n  \"situacao\": \"Inativo\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Produtos/:codigo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Produtos",
+												":codigo"
+											],
+											"variable": [
+												{
+													"key": "codigo",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"nome\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"preco\": \"<double>\",\n  \"categoria\": \"Sobremesa\",\n  \"situacao\": \"Inativo\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Produtos/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Produtos",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"codigo\": \"<integer>\",\n  \"nome\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"preco\": \"<double>\",\n  \"categoria\": \"Lanche\",\n  \"situacao\": \"Inativo\"\n}"
+										}
+									]
+								},
+								{
+									"name": "/api/Produtos/:codigo",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Produtos/:codigo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Produtos",
+												":codigo"
+											],
+											"variable": [
+												{
+													"key": "codigo",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Produtos/:codigo",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Produtos",
+														":codigo"
+													],
+													"variable": [
+														{
+															"key": "codigo"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"codigo\": \"<integer>\",\n  \"nome\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"preco\": \"<double>\",\n  \"categoria\": \"Lanche\",\n  \"situacao\": \"Inativo\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Produtos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nome\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"preco\": \"<double>\",\n  \"categoria\": \"Sobremesa\",\n  \"situacao\": \"Inativo\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Produtos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Produtos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nome\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"preco\": \"<double>\",\n  \"categoria\": \"Sobremesa\",\n  \"situacao\": \"Inativo\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Produtos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"codigo\": \"<integer>\",\n  \"nome\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"preco\": \"<double>\",\n  \"categoria\": \"Lanche\",\n  \"situacao\": \"Inativo\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Produtos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Produtos?Nome=<string>&Situacao=Ativo&Categoria=Acompanhamento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Produtos"
+									],
+									"query": [
+										{
+											"key": "Nome",
+											"value": "<string>"
+										},
+										{
+											"key": "Situacao",
+											"value": "Ativo"
+										},
+										{
+											"key": "Categoria",
+											"value": "Acompanhamento"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Produtos?Nome=<string>&Situacao=Ativo&Categoria=Acompanhamento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Produtos"
+											],
+											"query": [
+												{
+													"key": "Nome",
+													"value": "<string>"
+												},
+												{
+													"key": "Situacao",
+													"value": "Ativo"
+												},
+												{
+													"key": "Categoria",
+													"value": "Acompanhamento"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"codigo\": \"<integer>\",\n    \"nome\": \"<string>\",\n    \"descricao\": \"<string>\",\n    \"preco\": \"<double>\",\n    \"categoria\": \"Sobremesa\",\n    \"situacao\": \"Inativo\"\n  },\n  {\n    \"codigo\": \"<integer>\",\n    \"nome\": \"<string>\",\n    \"descricao\": \"<string>\",\n    \"preco\": \"<double>\",\n    \"categoria\": \"Bebida\",\n    \"situacao\": \"Inativo\"\n  }\n]"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}

@@ -44,10 +44,20 @@ Execute o comando no terminal:
  Docker-compose up --build
 ```
 
+## 3. Postman
+
+
+Criamos uma collection com todas as rotas.
+
+```bash
+
+```
+
+
 
 O swagger deve abrir na porta: 8080
 ```bash
-http://localhost:8080/index.html
+http://localhost:8080/swagger/index.html
 ```
 
 O banco irá executar na porta: 5432

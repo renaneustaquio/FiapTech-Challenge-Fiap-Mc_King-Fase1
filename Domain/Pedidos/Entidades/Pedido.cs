@@ -29,9 +29,9 @@ namespace Domain.Pedidos.Entidades
                 var valor = PedidoCombo.Sum(c => c.Preco);
 
                 return valor;
-             }
+            }
 
-            return  0;
+            return 0;
         }
 
     }

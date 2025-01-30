@@ -20,7 +20,7 @@ namespace Application.Services.Pedidos
                             IPedidoPagamentoRepository pedidoPagamentoRepository,
                             IClienteRepository clienteRepository,
                             IProdutoRepository produtoRepository) : IPedidoService
-    {        
+    {
         public List<PedidoResponse> Consultar()
         {
             try
@@ -323,7 +323,7 @@ namespace Application.Services.Pedidos
                                                           .Where(ps => ps.DataCriacao == pedidoStatusRepository
                                                           .Recuperar()
                                                           .Where(subPs => subPs.Pedido.Codigo == ps.PedidoCodigo)
-                                                          .Max(subPs => subPs.DataCriacao)) 
+                                                          .Max(subPs => subPs.DataCriacao))
                                                           .ToList()
                                                           .Where(ps => ps != null && ps.Status == StatusPedido.EmPreparo)
                                                           .Select(ps => new PedidoStatusMonitorResponse
