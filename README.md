@@ -16,7 +16,7 @@ Visual studio 2022
 
 .NET - 8.0
 
-Postgre - 16.4
+Postgres - 16.4
 
 Docker desktop
 
